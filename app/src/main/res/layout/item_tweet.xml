@@ -15,11 +15,21 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/tvScreenName"
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        tools:text="Someone'sName" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/tvName"
         android:text="TextView"
         tools:text="Someone@twitter" />
 
@@ -28,8 +38,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvScreenName"
+        android:textColor="@android:color/black"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="blahblahblahblahblah" />
 
@@ -38,6 +49,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         tools:text="some time ago..." />
+
+    <ImageButton
+        android:id="@+id/ibReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBody"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:src="@drawable/abc_vector_test"
+        tools:src="@drawable/abc_vector_test"
+        tools:text="*256" />
+
+    <ImageButton
+        android:id="@+id/ibRetweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBody"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ibReply"
+        android:src="@android:drawable/stat_notify_sync"
+        tools:src="@android:drawable/stat_notify_sync"
+        tools:text="*256" />
+
+    <ImageButton
+        android:id="@+id/ibFavCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBody"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:numStars="1"
+        android:src="@android:drawable/star_on"
+        tools:src="@android:drawable/star_on"
+        tools:text="*256" />
+
+
 </RelativeLayout>
