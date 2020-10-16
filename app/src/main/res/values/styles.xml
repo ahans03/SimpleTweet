@@ -13,4 +13,13 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="counterText" parent="Theme.MaterialComponents">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="counterOverride" parent="Theme.MaterialComponents">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
 </resources>

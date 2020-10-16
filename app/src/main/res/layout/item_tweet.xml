@@ -30,7 +30,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@id/tvName"
-        android:text="TextView"
         tools:text="Someone@twitter" />
 
     <TextView
@@ -74,7 +73,8 @@
         android:layout_toEndOf="@+id/ibReply"
         android:src="@android:drawable/stat_notify_sync"
         tools:src="@android:drawable/stat_notify_sync"
-        tools:text="*256" />
+        tools:text="*256"
+        android:contentDescription="TODO" />
 
     <ImageButton
         android:id="@+id/ibFavCount"
